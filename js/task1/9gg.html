@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="9.js"></script>
+    <title>魔幻九宫格</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10rem;
+    }
+    div {
+      width: 31%;
+      margin: 1%;
+      padding-bottom: 31%;
+      border-radius: 1rem;
+      background-color: rgb(255, 166, 0);
+    }
+    footer,
+    form {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: white;
+    }
+    .f1,
+    .f2 {
+      width: 100%;
+      padding: 1rem 0;
+      background-color: white;
+      border: solid rgb(255, 166, 0);
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: rgb(255, 166, 0);
+    }
+    .f1:hover,
+    .f2:hover {
+      background-color: rgb(255, 166, 0);
+      color: white;
+    }
+  </style>
+  <body>
+    <main>
+      <div class="sq"></div>
+      <div class="sq"></div>
+      <div class="sq"></div>
+      <div class="sq"></div>
+      <div class="sq"></div>
+      <div class="sq"></div>
+      <div class="sq"></div>
+      <div class="sq"></div>
+      <div class="sq"></div>
+    </main>
+    <footer>
+      <form>
+        <input class="f1" type="button" value="开始闪" onclick="go()" />
+        <input class="f2" type="button" value="结束闪" onclick="over()" />
+      </form>
+    </footer>
+  </body>
+</html>
